@@ -1,0 +1,245 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  color:#666;
+}
+
+.pimg1, .pimg2{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('images/pimg1.jpg');
+  min-height:100%;
+  max-height: 100%;
+}
+
+.pimg2{
+  background-image:url('images/pimg2.jpg');
+  min-height:400px;
+}
+
+/*section options used depending on clients preferance*/
+
+.section{
+  padding:10% 20%;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+  min-height: 60%;
+}
+
+#contact{
+  padding: 0;
+}
+
+#contact2{
+  padding-left:7%;
+}
+
+/* p-text is for putting text over an image*/
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+footer{
+  background-color:#282e34;
+  color:#ddd;
+  padding: 1%;
+  text-align: center;
+}
+
+footer a{
+  color:#ddd;
+}
+
+a :hover{
+  color:#fff;
+  text-decoration: none;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2{
+    background-attachment:scroll;
+  }
+}
+
+
+/*text section*/
+#main{
+    color: white;
+    padding: 2%;
+    text-align: center;
+    font-size: 200%; 
+}
+
+#greet{
+    text-shadow: 2px 2px 2px #333;
+    font-size: 150%;
+    margin-top: 0;
+    padding: 10%;
+}
+
+#time{
+    text-shadow: 2px 2px 2px #333;
+    font-size: 500%;
+    margin-top:13%;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#slide{
+    color: #FF66CC;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#slide h1 {
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(4.8vw);
+    white-space: nowrap;
+  }
+#slide h1:after {
+    content: 'Unstoppable.';
+    font-size: calc(4.8vw);
+    margin-left: 3%;
+    background: #ddd6f3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #faaca8, #ddd6f3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox {
+    width: 25%;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+  }
+  #slide .hoverbox.hover_1:hover ~ h1:after {
+    content: 'Beautiful.';
+    background: linear-gradient(to right, #96DEDA, #50C9C3);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_2:hover ~ h1:after {
+    content: 'Fun.';
+    background: linear-gradient(to right, #c21500, #ffc500);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_3:hover ~ h1:after {
+    content: 'Strong.';
+    background: linear-gradient(to right, #faaca8, #ddd6f3);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_4:hover ~ h1:after {
+    content: 'Determined.';
+    background: linear-gradient(to right, #414d0b, #727a17);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_5:hover ~ h1:after {
+    content: 'Motivated.';
+    background: linear-gradient(to right, #e43a15, #e65245);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_6:hover ~ h1:after {
+    content: 'Pure.';
+    background: linear-gradient(to right, #ED4264, #FFEDBC);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_7:hover ~ h1:after {
+    content: 'Vibrant.';
+    background: linear-gradient(to right, #DC2424, #4A569D);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_8:hover ~ h1:after {
+    content: 'Ready.';
+    background: linear-gradient(to right, #757F9A, #D7DDE8);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_9:hover ~ h1:after {
+    content: 'Incredible.';
+    background: linear-gradient(to right, #2BC0E4, #EAECC6);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_10:hover ~ h1:after {
+    content: 'Powerful.';
+    background: linear-gradient(to right, #4776E6, #8E54E9);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_11:hover ~ h1:after {
+    content: 'Indestructable.';
+    background: linear-gradient(to right, #1D976C, #93F9B9);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_12:hover ~ h1:after {
+    content: 'Loving.';
+    background: linear-gradient(to right, #EB3349, #F45C43);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_13:hover ~ h1:after {
+    content: 'Happy.';
+    background: linear-gradient(to right, #DD5E89, #F7BB97);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_14:hover ~ h1:after {
+    content: 'Without Fear.';
+    background: linear-gradient(to right, #1D2B64, #F8CDDA);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_15:hover ~ h1:after {
+    content: 'Self-Disciplined.';
+    background: linear-gradient(to right, #F09819, #EDDE5D);
+    -webkit-background-clip: text;
+  }
+  #slide .hoverbox.hover_16:hover ~ h1:after {
+    content: 'Just Beginning.';
+    background: linear-gradient(to right, #E55D87, #5FC3E4);
+    -webkit-background-clip: text;
+  }
